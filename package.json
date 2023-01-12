@@ -26,11 +26,6 @@
     "react": ">=16",
     "styled-components": ">=5"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn pre-commit"
-    }
-  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
