@@ -11,6 +11,7 @@ That means the main code you'll be touching (aka the "UI" for viewing the wallet
 I am skipping node installation steps as it's out of this scope, but [see here for NVM installation steps](https://heynode.com/tutorial/install-nodejs-locally-nvm/)
 
 1. install `yarn`:
+    
     Node.js >=16.10
     Corepack is included by default with all Node.js installs, but is currently opt-in. To enable it, run the following command:
 
