@@ -60,6 +60,16 @@ IF (it really shouldn't) setup/loading starts to take a longtime consider adding
 ### WalletConnect registration/setup steps
 1. REACT DOCS: https://docs.walletconnect.com/2.0/web3modal/react/installation
 2. WALLETCONNECT APK KEY: https://cloud.walletconnect.com/
+    
+    _Why get a key?_
+
+    ```bash
+    projectId (optional)
+    Your project’s unique identifier that can be obtained at cloud.walletconnect.com. Providing this enables the following functionalities within Web3Modal: wallet and chain logos, optional walletconnect rpc, support for all wallets from explorer.walletconnect.com. Defaults to undefined
+    ```
+
+    Essentially it gives you nice defaults and doesn't require manually filling in the available wallets/chains/logs etc. For more info [see the documentation on configuration](https://docs.walletconnect.com/2.0/web3modal/configuration)
+
 3. MAKE ACCT AND SAVE PROJECT INFO
 
 ### Troubleshooting
