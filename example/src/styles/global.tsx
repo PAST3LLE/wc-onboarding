@@ -1,15 +1,31 @@
 import { css, createGlobalStyle } from 'styled-components'
 
 const GlobalVariables = css`
-  --main-text-color: #fff;
+  --theme-text-main: #fff;
+  --theme-text-alt: #fff;
 
-  --main-bg-light: #13818c;
-  --main-bg-dark: #084046;
+  --theme-main: #084046;
+  --theme-main-dark: #042023;
+  --theme-accent: #13818c;
+  --theme-main-alt: lightsalmon;
+  --theme-accent-alt: darkblue;
 
   --purple-bg-light: #a179b6;
   --purple-bg-dark: #741dbb;
-
   --grey-bg-dark: #282c34;
+`
+
+// "!important" override on WalletConnect style variables
+// this is ugly but currently the only way to style web3modal
+const WalletConnectOverrideVariables = css`
+  --color-fg-accent: var(--theme-accent) !important;
+  --color-bg-1: var(--theme-main-dark) !important;
+  --color-fg-1: #fff !important;
+  // gradients
+  --gradient-1: var(--theme-main) !important;
+  --gradient-2: var(--theme-accent) !important;
+  --gradient-3: var(--theme-main) !important;
+  --gradient-4: var(--theme-accent) !important;
 `
 
 const BaseAndReset = css`
@@ -102,6 +118,7 @@ const BaseAndReset = css`
 const GlobalCSS = createGlobalStyle`
   :root {
     ${GlobalVariables}
+    ${WalletConnectOverrideVariables}
   }
 
   // RESET and BASE STYLES

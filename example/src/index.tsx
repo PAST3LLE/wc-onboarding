@@ -51,9 +51,10 @@ const root = ReactDOMClient.createRoot(container)
 root.render(
   <>
     <GlobalStyles />
+
     <WagmiProvider client={WAGMI_CLIENT}>
       <App />
     </WagmiProvider>
-    <Web3Modal projectId={WALLETCONNECT_PROJECT_KEY} ethereumClient={ETHEREUM_CLIENT} />
+    <Web3Modal projectId={WALLETCONNECT_PROJECT_KEY} ethereumClient={ETHEREUM_CLIENT} enableNetworkView />
   </>
 )

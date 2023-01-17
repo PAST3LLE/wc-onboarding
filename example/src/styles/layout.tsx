@@ -31,7 +31,7 @@ export const AppContainer = styled(ColumnSpaceBetween)`
   height: 100%;
 `
 export const Header = styled(RowSpaceBetween).attrs({ as: 'header' })`
-  background: var(--main-bg-light, lightGreen);
+  background: var(--theme-main);
   height: 100px;
   padding: 0.5rem 1rem;
 `
@@ -42,6 +42,6 @@ export const Main = styled(ColumnCentered).attrs({ as: 'main' })`
   background: radial-gradient(#0840465c, #0000004f);
 `
 export const Footer = styled(RowCentered).attrs({ as: 'footer' })`
-  background: var(--main-bg-dark, darkGreen);
+  background: var(--theme-main);
   height: 100px;
 `
