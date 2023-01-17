@@ -44,7 +44,9 @@ OR
 
 The main challenge should be coded from the `main` branch. The goal is to setup our example app to display a "Connect wallet" (or similar) button via the `Web3Modal` library which allows us to connect to `MetaMask` (should already have this installed) and/or any other wallet that is either mobile QR code compatible or [part of the default WalletConnect Web3Modal options](https://explorer.walletconnect.com/).
 
-If you get stuck or just want to start from an already setup example, checkout the `solution` branch.
+## If you get stuck or just want to start from an already setup example, checkout the `solution` branch.
+
+Extra-credit: try making a `CustomWeb3ConnectButton` using the `web3Modal` hooks and your own custom component.
 
 Some tips:
 1. the app is setup to use [`styled-components`](https://styled-components.com/docs) as a means of styling but you can just as easily use css files and import them.
